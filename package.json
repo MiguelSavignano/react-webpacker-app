@@ -16,7 +16,7 @@
     "whatwg-fetch": "^2.0.3"
   },
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server -w --config config/webpack/development.js",
+    "start": "./node_modules/.bin/webpack-dev-server -d --config config/webpack/development.js",
     "build": "./node_modules/.bin/webpack -p --config config/webpack/production.js",
     "sasslint": "sass-lint -v -q",
     "test": "",
