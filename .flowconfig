@@ -1,0 +1,14 @@
+[ignore]
+.*/volumes/.*
+.*/vendor/.*
+[include]
+./app/views/**/*.jsx
+
+[libs]
+.*/node_modules/.*
+
+[lints]
+
+[options]
+
+[strict]

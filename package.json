@@ -1,0 +1,41 @@
+{
+  "name": "front-stack",
+  "version": "v0.0.1",
+  "description": "",
+  "repository": {
+    "git": "https://github.com/miguelSavignano/react-front-stack"
+  },
+  "dependencies": {
+    "@rails/webpacker": "^3.2.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server -w --config config/webpack/development.js",
+    "build": "./node_modules/.bin/webpack -p --config config/webpack/production.js",
+    "sasslint": "sass-lint -v -q",
+    "test": "",
+    "eslint": "eslint app/packs/** app/views/**/*.jsx",
+    "flow": "flow status"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.16.0",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.42.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.0",
+    "flow-bin": "^0.67.1",
+    "sass-lint": "^1.12.1",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "license": "UNLICENSED",
+  "README": "README.md"
+}
