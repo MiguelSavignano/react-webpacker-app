@@ -5,7 +5,6 @@ import Routes from "./routes"
 const App = props => (
   <BrowserRouter>
     <div>
-      <div>Hola React</div>
       <Routes />
     </div>
   </BrowserRouter>
