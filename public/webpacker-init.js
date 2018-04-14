@@ -14,7 +14,7 @@ class WebpackerInitClass {
     })
   }
 
-  loadPack(packName = "", { manifestPath = "/public/packs/manifest.json" } = {}) {
+  loadPack(packName = "", { manifestPath = "/packs/manifest.json" } = {}) {
     this.loadManifest(manifestPath, (manifestJSON) => {
       console.log(manifestJSON)
       let scriptName = manifestJSON[packName]
