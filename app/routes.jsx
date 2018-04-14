@@ -1,9 +1,8 @@
 import React from "react"
-import { BrowserRouter } from "react-router-dom"
 import { Route } from "react-router-dom"
-import Home from "../home/index"
-import PostsIndex from "../posts/index"
-import PostsShow from "../posts/show"
+import Home from "./views/home/index"
+import PostsIndex from "./views/posts/index"
+import PostsShow from "./views/posts/show"
 
 const AppRoutes = () => (
   <React.Fragment>
@@ -13,12 +12,4 @@ const AppRoutes = () => (
   </React.Fragment>
 )
 
-const App = props => (
-  <BrowserRouter>
-    <div>
-      <div>Hola React</div>
-      <AppRoutes />
-    </div>
-  </BrowserRouter>
-)
-export default App
+export default AppRoutes
