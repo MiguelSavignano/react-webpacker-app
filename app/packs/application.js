@@ -2,8 +2,8 @@ import 'babel-polyfill'
 import 'whatwg-fetch'
 import React from "react"
 import { render } from "react-dom"
-import HomeView from "../views/home/index"
+import App from "../views/application/app"
 
 const element = document.getElementById("react-root")
-render(<HomeView />, element)
+render(<App />, element)
 console.log("Hi front stack!!")
