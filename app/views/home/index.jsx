@@ -1,15 +1,16 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 const HomeView = () => (
   <ul>
     <li>
-      <a href="/posts">Index</a>
+      <Link to="/posts">Index</Link>
     </li>
     <li>
-      <a href="/posts/1">Show</a>
+      <Link to="/posts/1">Show</Link>
     </li>
     <li>
-      <a href="/posts/1/edit">Edit</a>
+      <Link to="/posts/1/edit">Edit</Link>
     </li>
   </ul>
 )
