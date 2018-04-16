@@ -1,4 +1,4 @@
-export default class WebpackRegister {
+export default class WebpackFolderContext {
 
   constructor(requireContext){
     this.requireContext = requireContext
@@ -12,7 +12,6 @@ export default class WebpackRegister {
       let fileName = this.deleteFileExtension(filePath.replace("./", ""))
       return {
         filePath: `${prefix}${fileName}`,
-        fullPath: `${prefix}${filePath}`,
         Component: this.getModule(id).default,
         module: this.getModule(id),
       }
