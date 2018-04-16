@@ -1,6 +1,6 @@
 import WebpackFolderContext from "./webpack-folder-context"
 
-const mergeWithFolderContext = (routesMap, webpackContext) => {
+const drawRoutes = (routesMap, webpackContext) => {
   const contextFolder = new WebpackFolderContext(webpackContext)
   const folderPathsContext = contextFolder.getAllModulesByFile()
   let array = []
@@ -14,4 +14,4 @@ const mergeWithFolderContext = (routesMap, webpackContext) => {
   return array
 }
 
-export { mergeWithFolderContext }
+export { drawRoutes }

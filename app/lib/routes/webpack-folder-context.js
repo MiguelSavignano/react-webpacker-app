@@ -4,7 +4,6 @@ export default class WebpackFolderContext {
     this.requireContext = requireContext
   }
 
-  // return a [{ filePath: "file_folder/fileName", value: ExportedDefaultObject }]
   getAllModulesByFile = ({prefix = ""} = {}) => {
     const filesPaths = this.requireContext.keys()
     return filesPaths.map(filePath => {
