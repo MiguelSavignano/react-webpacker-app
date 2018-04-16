@@ -14,13 +14,14 @@ routesMap = mergeWithFolderContext(routesMap, require.context("./views/", true, 
 
 const AppRoutes = () => (
   <React.Fragment>
-    {routesMap.map(({ Component, path }) => {
-      return <Route key={path} path={path} component={Component} />
+    {routesMap.map(({ Component, path, to }) => {
+      return <Route exact key={to} path={path} render={({ match }) => <Component params={match.params} />} />
     })}
   </React.Fragment>
 )
 
 // <Route exact path="/" component={Home} />
 // <Route path="/posts/:id" render={({ match }) => <PostsShow id={match.params.id} />} />
+// <Route path={"/posts/:id"} render={({ match }) => <PostsShowView params={match.params} />} />
 // <Route key={filePath} path={filePath} component={Component} />
 export default AppRoutes

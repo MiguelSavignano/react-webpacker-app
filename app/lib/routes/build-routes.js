@@ -11,7 +11,6 @@ const mergeWithFolderContext = (routesMap, webpackContext) => {
       }
     })
   })
-  console.log(array)
   return array
 }
 
