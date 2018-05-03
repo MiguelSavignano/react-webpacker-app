@@ -1,4 +1,4 @@
-# Reaact webpacker app
+# React webpacker app
 
 Simple webpack dev server for create react app with routes
 
